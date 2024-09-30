@@ -10,3 +10,9 @@ body {
 .intro-text {
     padding: 20px; /* Adjust padding */
 }
+
+.nav-links ul {
+    display: flex; /* Keep this for larger screens */
+    list-style: none;
+}
+

@@ -17,6 +17,16 @@ nav {
     background-color: #252525; /* Navbar background */
 }
 
+/* Add styles for active nav links */
+.nav-links.active {
+    display: flex; /* Show the links when active */
+}
+
+/* Additional styles for smooth transitions if needed */
+.nav-links {
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
 .nav-logo {
     width: 70px; /* Set the logo size */
     height: 70px; /* Set the logo size */
@@ -43,7 +53,6 @@ nav a {
     background-color: #1F1F1F; /* Dark background */
     transition: background-color 0.3s; /* Smooth transition */
     border-radius: 35px; /* Rounded corners */
-
 }
 
 nav a:hover {
@@ -53,18 +62,19 @@ nav a:hover {
 /* About Section Styles */
 #about {
     display: flex; /* Flexbox for aligning image and text */
-    align-items: center; /* Center items vertically */
+    align-items: flex-start; /* Align items to the start */
+    flex-wrap: wrap; /* Allow wrapping */
     padding: 20px;
 }
 
 #about .container {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: flex-start; /* Align items to the start */
+    flex-wrap: wrap; /* Allow wrapping */
     padding: 20px;
 }
 
-#about h2{
+#about h2 {
     width: 100%; /* Full width */
     text-align: left;
     margin-bottom: 20px;
@@ -79,17 +89,34 @@ nav a:hover {
     flex-shrink: 0; /* Prevent image from shrinking */
 }
 
-.intro-text{
-    width: auto;
-    height: 640px;
+.intro-text {
+    width: 500px; /* Width for the intro text */
+    height: auto; /* Allow height to adjust based on content */
     background-color: #252525; /* Dark background */
     border-radius: 35px; /* Rounded corners */
     padding: 25px; /* Padding inside the box */
-    flex-grow: 1;
-    
+    margin-bottom: 20px; /* Space below intro text */
 }
 
-#contact{
+/* Centered Video Styles */
+.video-container {
+    display: flex; /* Use flexbox to center the video */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Space above the video */
+    padding: 50px; /* Padding around the video */
+    width: 100%; /* Full width for centering */
+}
+
+.video-container video {
+    max-width: 100%; /* Make it responsive */
+    height: auto; /* Maintain aspect ratio */
+    width: calc(100% - 100px); /* Full width minus padding */
+    border-radius: 35px; /* Optional: rounded corners */
+}
+
+/* Contact Section Styles */
+#contact {
     padding: 20px;
 }
 
@@ -98,29 +125,30 @@ nav a:hover {
     flex-direction: column;
 }
 
-#contact label{
-    margin:10px 0 5px; /* Space between labels */
+#contact label {
+    margin: 10px 0 5px; /* Space between labels */
 }
 
-#contact input, #conatact textarea{
+#contact input,
+#contact textarea {
     border-radius: 8px;
     padding: 10px;
     border: 3px solid #3C8B4A; /* Green border */
     margin-bottom: 10px; /* Space between input fields */
 }
 
-#contact button{
+#contact button {
     margin-top: 30px;
     background-color: #252525;
-    color:white;
-    border:none;
+    color: white;
+    border: none;
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
 }
 
-#contact button:hover{
-    background-color: #3C8B4A; 
+#contact button:hover {
+    background-color: #3C8B4A;
 }
 
 /* Footer Styles */
@@ -132,29 +160,19 @@ footer {
     margin-top: 20px; /* Space between content and footer */
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Stack items vertically */
-    }
-}
 
-/* Custom Scrollbar */
+/* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
-    width: 15px; /* Set the width of the scrollbar */
-}
-
-::-webkit-scrollbar-track {
-    background: #252525; /* Dark background for scrollbar track */
-    border-radius: 10px;
+    width: 12px; /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #2E6F40; /* Use your accent color */
+    background: linear-gradient(to bottom, #1F1F1F, #3C8B4A); /* Fluid linear gradient */
     border-radius: 10px; /* Rounded corners */
     border: 3px solid #252525; /* Adds space between the thumb and the track */
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: #3C8B4A; /* Slightly brighter shade on hover */
+::-webkit-scrollbar-track {
+    background: #252525; /* Background color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
 }

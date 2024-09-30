@@ -10,54 +10,61 @@
     <link rel="stylesheet" href="laptop.css" media="(min-width: 1025px)"> <!-- Laptop styles -->
     <link rel="stylesheet" href="tablet.css" media="(max-width: 1024px) and (min-width: 769px)"> <!-- Tablet styles -->
     <link rel="stylesheet" href="phone.css" media="(max-width: 768px)"> <!-- Phone styles -->
-    
 </head>
 
 <body>
     <!-- Navbar -->
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="logo">
                 <img src="RITIK-1.jpg" alt="Ritik Gautam Logo" class="nav-logo">
             </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
+            <div class="hamburger-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-
 
     <!-- About Section -->
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            
+            <div class="about-content">
                 <img src="ritik.jpg" alt="Ritik Gautam" class="profile-photo">
                 <div class="intro-text">
-                <p>Hi, I'm Ritik, a passionate IT student eager to explore the world of technology and enhance my
-                    skills.</p>
+                    <p>Hi, I'm Ritik, a passionate IT student eager to explore the world of technology and enhance my skills.</p>
                 </div>
+            </div>
         </div>
 
-            <!-- Embedded Intro Video -->
-            <div class="video-container">
-                <video controls poster="video-poster.jpg" class="intro-video">
-                    <source src="intro-videos.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <!-- Centered Intro Video -->
+        <div class="video-container">
+            <video controls poster="video-poster.jpg" class="intro-video">
+                <source src="intro-videos.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer id="main-footer">
         <div class="container">
-            <p>&copy; 2024 Ritik Gautam | Contact: <a
-                    href="mailto:ritikgautam1102@gmail.com">ritikgautam1102@gmail.com</a></p>
+            <p>&copy; 2024 Ritik Gautam | Contact: <a href="mailto:ritikgautam1102@gmail.com">ritikgautam1102@gmail.com</a></p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
 </body>
 
 </html>
