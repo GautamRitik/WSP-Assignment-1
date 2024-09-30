@@ -1,0 +1,12 @@
+/* Laptop Styles */
+body {
+    font-size: 18px; /* Larger font size */
+}
+
+.profile-photo {
+    width: 300px; /* Fixed width */
+}
+
+.intro-text {
+    padding: 20px; /* Adjust padding */
+}

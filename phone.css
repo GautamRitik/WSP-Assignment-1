@@ -1,0 +1,13 @@
+/* Mobile Styles */
+body {
+    font-size: 14px; /* Smaller font size */
+}
+
+.profile-photo {
+    width: 100%; /* Full width */
+    align-items: center;
+}
+
+.intro-text {
+    padding: 10px; /* Adjust padding */
+}
