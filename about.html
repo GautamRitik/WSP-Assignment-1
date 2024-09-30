@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Me | Ritik Gautam's Portfolio</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <!-- Navbar -->
-         <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
-         </header>
 
-         <!--About Section-->
-         <section id="about">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Ritik Gautam's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="RITIK-1.jpg" alt="Ritik Gautam Logo" class="nav-logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
             <h2>About Me</h2>
-            <img src="images/ritik.jpg" alt="Ritik Gautam" class="profile-photo"> 
-            <p>Hi, I'm Ritik, a passionate IT student eager to explore the world of technology.</p>
+            <div class="about-content">
+                <img src="ritik.jpg" alt="Ritik Gautam" class="profile-photo">
+                <p>Hi, I'm Ritik, a passionate IT student eager to explore the world of technology and enhance my
+                    skills.</p>
+            </div>
 
-            <!--Embeded Intro Video-->
-            <video controls poster="video-poster.jpg" width="320" height="240">
-                <source src="intro-videeos.mp4" type="video/mp4">
-            </video>
-            </section>
+            <!-- Embedded Intro Video -->
+            <div class="video-container">
+                <video controls poster="video-poster.jpg" class="intro-video">
+                    <source src="intro-videos.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
 
-            <footer>
-                <p>&copy; 2024 Ritik Gautam | Contact: <a href="mailto:ritikgautam1102@gmail.com.com">ritikgautam1102@gmail.com</a></p>
-            </footer>
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Ritik Gautam | Contact: <a
+                    href="mailto:ritikgautam1102@gmail.com">ritikgautam1102@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
 
-    </body>
 </html>
