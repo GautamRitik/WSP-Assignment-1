@@ -14,7 +14,6 @@
     top: 60px; /* Position below the navbar */
     right: 0;
     width: 200px; /* Set width for mobile dropdown */
-    background-color: #252525; /* Dark background for links */
     border-radius: 35px; /* Rounded corners */
     padding: 20px; /* Space inside the links box */
     z-index: 9;
@@ -65,34 +64,51 @@
 .nav-links.active {
     display: flex; /* Show links when active */
 }
+.hamburger-menu {
+    display: flex; /* Show hamburger menu on small screens */
+}
 
-/* Make hamburger menu visible on small screens */
-@media only screen and (max-width: 768px) {
-    .hamburger-menu {
-        display: flex; /* Show hamburger menu on small screens */
-    }
+.nav-links {
+    display: none; /* Ensure display is controlled by the active class */
+}
 
-    .nav-links {
-        display: none; /* Ensure display is controlled by the active class */
-    }
+.nav-links.active {
+    display: flex; /* Show links when nav is active */
+}
 
-    .nav-links.active {
-        display: flex; /* Show links when nav is active */
-    }
+.nav-links ul {
+    display: flex; /* Display links as flex for mobile view */
+    flex-direction: column; /* Stack the nav items vertically */
+    position: absolute; /* Overlay position */
+    top: 60px; /* Position below the header */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    background-color: #333; /* Dark background */
+    border-radius: 35px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition */
+}
 
-    .nav-links ul {
-        display: flex; /* Display links as flex for mobile view */
-        flex-direction: column; /* Stack the nav items vertically */
-        position: absolute; /* Overlay position */
-        top: 60px; /* Position below the header */
-        left: 0; /* Align to the left */
-        width: 100%; /* Full width */
-        background-color: #333; /* Dark background */
-        transition: all 0.3s ease; /* Smooth transition */
-    }
+.nav-links li {
+    text-align: center; /* Center align links */
+    margin: 20px 0; /* Space between links */
+}
+    
+.button-container {
+    text-align: center; /* Center the button text */
+    margin-top: 20px; /* Space above the container */
+}
 
-    .nav-links li {
-        text-align: center; /* Center align links */
-        margin: 20px 0; /* Space between links */
-    }
+.container {
+    text-align: center;
+}
+#about h2 {
+    text-align: center;
+
+}
+.about-container {
+   text-align: center;
+}
+
+footer a {
+    font-size: 16px; /* Icon size */
 }

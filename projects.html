@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="laptop.css" media="(min-width: 1025px)"> <!-- Laptop styles -->
     <link rel="stylesheet" href="tablet.css" media="(max-width: 1024px) and (min-width: 769px)"> <!-- Tablet styles -->
     <link rel="stylesheet" href="phone.css" media="(max-width: 768px)"> <!-- Phone styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -25,7 +27,7 @@
             <div class="logo">
                 <img src="RITIK-1.jpg" alt="Ritik Gautam Logo" class="nav-logo">
             </div>
-            <div class="hamburger-menu" aria-label="Toggle navigation">
+            <div class="hamburger-menu" id="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
@@ -41,26 +43,54 @@
         </nav>
     </header>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <ul>
-                <li>Weather Website using OpenWeather API</li>
-                <li>Java Snakes & Ladders Game</li>
-            </ul>
-        </div>
-    </section>
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2>My Projects</h2>
+        <article class="project-slide">
+            <h3>Weather Website using OpenWeather API</h3>
+            <p>Weather website that displays the current weather and forecast for the next 7 days using the OpenWeather API.</p>
+        </article>
+        <article class="project-slide">
+            <h3>Java Snakes & Ladders Game</h3>
+            <p>Java implementation of the classic Snakes & Ladders game with a text-based GUI.</p>
+        </article>
+        <article class="project-slide">
+            <h3>Personal Portfolio Website</h3>
+            <p>My personal portfolio website showcasing my projects, skills, and contact information.</p>
+        </article>
+    </div>
+</section>
+
 
     <!-- Footer -->
-    <footer id="main-footer">
-        <div class="container">
-            <p>&copy; 2024 Ritik Gautam | Contact: <a href="mailto:ritikgautam1102@gmail.com">ritikgautam1102@gmail.com</a></p>
-        </div>
-    </footer>
+<footer id="footer">
+    <div class="container">
+        <p>&copy; 2024 Ritik Gautam | Contact:<a href="mailto:ritikgautam1102@gmail.com">ritikgautam1102@gmail.com</a> | 
+            <a href="https://ca.linkedin.com/in/ritik-gautam-aa6690252" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/GautamRitik" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </p>
+    </div>
+</footer>
     
     <!-- JavaScript -->
     <script src="main.js"></script> 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const projectArticles = document.querySelectorAll(".project-slide");
+
+            projectArticles.forEach((article,index) => {
+                setTimeout(() => {
+                    article.classList.add("loaded");
+                }, 500 * index);
+            });
+        });
+    </script>
 </body>
 
 </html>

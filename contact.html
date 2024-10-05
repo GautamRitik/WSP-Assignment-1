@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="laptop.css" media="(min-width: 1025px)"> <!-- Laptop styles -->
     <link rel="stylesheet" href="tablet.css" media="(max-width: 1024px) and (min-width: 769px)"> <!-- Tablet styles -->
     <link rel="stylesheet" href="phone.css" media="(max-width: 768px)"> <!-- Phone styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   
 </head>
 
 <body>
@@ -20,7 +23,7 @@
             <div class="logo">
                 <img src="RITIK-1.jpg" alt="Ritik Gautam Logo" class="nav-logo">
             </div>
-            <div class="hamburger-menu" aria-label="Toggle navigation">
+            <div class="hamburger-menu" id="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
@@ -43,28 +46,42 @@
             <h2>Contact Me</h2>
             <form action="mailto:ritikgautam1102@gmail.com" method="post" enctype="text/plain">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" list="email-domains" placeholder="Your Email Address" required>
+                <datalist id="email-domains">
+                    <option value="@gmail.com">
+                    <option value="@icloud.com">
+                    <option value="@yahoo.com">
+                    <option value="@outlook.com">
+                    <option value="@hotmail.com">
+                </datalist>
 
                 <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
 
-                <button type="submit">Send</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="main-footer">
-        <div class="container">
-            <p>&copy; 2024 Ritik Gautam | Contact: <a href="mailto:ritikgautam1102@gmail.com">ritikgautam1102@gmail.com</a></p>
-        </div>
-    </footer>
+<footer id="footer">
+    <div class="container">
+        <p>&copy; 2024 Ritik Gautam | Contact:<a href="mailto:ritikgautam1102@gmail.com">ritikgautam1102@gmail.com</a> | 
+            <a href="https://ca.linkedin.com/in/ritik-gautam-aa6690252" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/GautamRitik" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </p>
+    </div>
+</footer>
 
     <!-- JavaScript -->
     <script src="main.js"></script> 

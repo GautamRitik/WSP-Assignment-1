@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="laptop.css" media="(min-width: 1025px)"> <!-- Laptop styles -->
     <link rel="stylesheet" href="tablet.css" media="(max-width: 1024px) and (min-width: 769px)"> <!-- Tablet styles -->
     <link rel="stylesheet" href="phone.css" media="(max-width: 768px)"> <!-- Phone styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -37,19 +39,18 @@
 
     <!-- About Section -->
     <section id="about">
-        <div class="container">
+        <div class="about-container">
             <h2>About Me</h2>
             <div class="about-content">
-                <img src="ritik.jpg" alt="Ritik Gautam" class="profile-photo">
                 <div class="intro-text">
-                    <p>Hi, I'm Ritik, a passionate IT student eager to explore the world of technology and enhance my skills.</p>
+                    <p>Hi, I'm Ritik, a passionate IT student eager to explore the world of technology and enhance my skills. With a keen interest in programming and problem-solving, I am dedicated to learning about the latest advancements in the tech industry. My journey in IT has fueled my curiosity and drive to innovate, and I look forward to collaborating with like-minded individuals to create impactful solutions. Whether it's through hands-on projects or engaging with new technologies, I am excited to embrace every opportunity for growth and development in this dynamic field.</p>
                 </div>
             </div>
         </div>
 
         <!-- Centered Intro Video -->
         <div class="video-container">
-            <video controls poster="video-poster.jpg" class="intro-video">
+            <video controls autoplay muted poster="video-poster.jpg" class="intro-video">
                 <source src="intro-videos.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -57,11 +58,18 @@
     </section>
 
     <!-- Footer -->
-    <footer id="main-footer">
-        <div class="container">
-            <p>&copy; 2024 Ritik Gautam | Contact: <a href="mailto:ritikgautam1102@gmail.com">ritikgautam1102@gmail.com</a></p>
-        </div>
-    </footer>
+<footer id="footer">
+    <div class="container">
+        <p>&copy; 2024 Ritik Gautam | Contact:<a href="mailto:ritikgautam1102@gmail.com">ritikgautam1102@gmail.com</a> | 
+            <a href="https://ca.linkedin.com/in/ritik-gautam-aa6690252" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/GautamRitik" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </p>
+    </div>
+</footer>
 
     <!-- JavaScript -->
     <script src="main.js"></script>

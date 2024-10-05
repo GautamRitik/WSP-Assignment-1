@@ -9,11 +9,6 @@ h1, h2, h3 {
     font-size: 2rem; /* Fluid font sizes */
 }
 
-/* Example for responsive images */
-img {
-    max-width: 100%; /* Ensure images are responsive */
-    height: auto; /* Maintain aspect ratio */
-}
 nav {
     background: linear-gradient(to right, #1F1F1F, #3C8B4A); /* Fluid linear gradient */
 }
